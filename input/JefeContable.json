@@ -1,0 +1,191 @@
+[
+    {
+        "header": true,
+        "tipo": "tabla",
+        "nombre": "",
+        "sql_file_path": "sql/cuentas/NombreCuenta.sql",
+        "table_metadata": {
+            "column_names": ["Nombre de Cuenta"],
+            "styles": {
+                "columns": [
+                    ["align_center"]
+                ]
+            }
+        }
+    },
+    {
+        "header": true,
+        "tipo": "tabla",
+        "nombre": "",
+        "sql_file_path": "sql/cuentas/NumeroCuenta.sql",
+        "table_metadata": {
+            "column_names": ["Numero de Cuenta"],
+            "styles": {
+                "columns": [
+                    ["align_center"]
+                ]
+            }
+        }
+    },
+    {
+        "header": true,
+        "tipo": "tabla",
+        "nombre": "",
+        "sql_file_path": {
+            "activo": "sql/cuentas/SaldoCuentaActivo.sql",
+            "pasivo": "sql/cuentas/SaldoCuentaPasivo.sql",
+            "patrimonio": "sql/cuentas/SaldoCuentaPatrimonio.sql",
+            "ingresos": "sql/cuentas/SaldoCuentaIngresos.sql",
+            "egresos": "sql/cuentas/SaldoCuentaEgresos.sql",
+            "impuestos": "sql/cuentas/SaldoCuentaImpuestos.sql",
+            "derechos": "sql/cuentas/SaldoCuentaDerechos.sql",
+            "responsabilidad": "sql/cuentas/SaldoCuentaResponsabilidad.sql",
+            "orden": "sql/cuentas/SaldoCuentaOrden.sql"
+        },
+        "table_metadata": {
+            "column_names": ["Saldo segun Balance"],
+            "styles": {
+                "columns": [
+                    ["align_center"]
+                ]
+            }
+        }
+    },
+    {
+        "tipo": "tendencia",
+        "nombre": "Linea de tendencia",
+        "sql_file_path": {
+            "activo": "sql/cuentas/tendenciaActivo.sql",
+            "pasivo": "sql/cuentas/tendenciaPasivo.sql",
+            "patrimonio": "sql/cuentas/tendenciaPatrimonio.sql",
+            "ingresos": "sql/cuentas/tendenciaIngresos.sql",
+            "egresos": "sql/cuentas/tendenciaEgresos.sql",
+            "impuestos": "sql/cuentas/tendenciaImpuestos.sql",
+            "derechos": "sql/cuentas/tendenciaDerechos.sql",
+            "responsabilidad": "sql/cuentas/tendenciaResponsabilidad.sql",
+            "orden": "sql/cuentas/tendenciaOrden.sql"
+        },
+        "table_metadata": {
+            "column_names": ["Tendencia"],
+            "styles": {
+                "columns": [
+                    ["align_center"]
+                ]
+            }
+        }
+    },
+    {
+        "tipo": "grafico",
+        "nombre": "Serie de Tiempo",
+        "haxis": "Meses",
+        "vaxis": "Pesos",
+        "lineas": [
+            {
+                "nombre": "2017",
+                "sql_file_path": {
+                    "activo": "sql/cuentas/SaldoAnteriorActivo.sql",
+                    "pasivo": "sql/cuentas/SaldoAnteriorPasivo.sql",
+                    "patrimonio": "sql/cuentas/SaldoAnteriorPatrimonio.sql",
+                    "ingresos": "sql/cuentas/SaldoAnteriorIngresos.sql",
+                    "egresos": "sql/cuentas/SaldoAnteriorEgresos.sql",
+                    "impuestos": "sql/cuentas/SaldoAnteriorImpuestos.sql",
+                    "derechos": "sql/cuentas/SaldoAnteriorDerechos.sql",
+                    "responsabilidad": "sql/cuentas/SaldoAnteriorResponsabilidad.sql",
+                    "orden": "sql/cuentas/SaldoAnteriorOrden.sql"
+                }
+            },
+            {
+                "nombre": "2018",
+                "sql_file_path": {
+                    "activo": "sql/cuentas/SaldoActualActivo.sql",
+                    "pasivo": "sql/cuentas/SaldoActualPasivo.sql",
+                    "patrimonio": "sql/cuentas/SaldoActualPatrimonio.sql",
+                    "ingresos": "sql/cuentas/SaldoActualIngresos.sql",
+                    "egresos": "sql/cuentas/SaldoActualEgresos.sql",
+                    "impuestos": "sql/cuentas/SaldoActualImpuestos.sql",
+                    "derechos": "sql/cuentas/SaldoActualDerechos.sql",
+                    "responsabilidad": "sql/cuentas/SaldoActualResponsabilidad.sql",
+                    "orden": "sql/cuentas/SaldoActualOrden.sql"
+                }
+            }
+        ]
+    },
+    {
+        "tipo": "tabla",
+        "nombre": "Ultimos 5 periodos",
+        "sql_file_path": {
+            "activo": "sql/cuentas/Ultimos5aniosActivo.sql",
+            "pasivo": "sql/cuentas/Ultimos5aniosPasivo.sql",
+            "patrimonio": "sql/cuentas/Ultimos5aniosPatrimonio.sql",
+            "ingresos": "sql/cuentas/Ultimos5aniosIngresos.sql",
+            "egresos": "sql/cuentas/Ultimos5aniosEgresos.sql",
+            "impuestos": "sql/cuentas/Ultimos5aniosImpuestos.sql",
+            "derechos": "sql/cuentas/Ultimos5aniosDerechos.sql",
+            "responsabilidad": "sql/cuentas/Ultimos5aniosResponsabilidad.sql",
+            "orden": "sql/cuentas/Ultimos5aniosOrden.sql"
+        },
+        "table_metadata": {
+            "column_names": ["Year","Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov", "Dic"],
+            "styles": {
+                "columns": [
+                    ["align_center", "letras_verdes"]
+                ]
+            }
+        }
+
+    },
+    {
+        "tipo": "tabla",
+        "nombre": "Ultimos 20 movimientos",
+        "sql_file_path": {
+            "activo": "sql/cuentas/Ultimos10Movimientos.sql",
+            "pasivo": "sql/cuentas/Ultimos10Movimientos.sql",
+            "patrimonio": "sql/cuentas/Ultimos10Movimientos.sql",
+            "ingresos": "sql/cuentas/Ultimos10Movimientos.sql",
+            "egresos": "sql/cuentas/Ultimos10Movimientos.sql",
+            "impuestos": "sql/cuentas/Ultimos10Movimientos.sql",
+            "derechos": "sql/cuentas/Ultimos10Movimientos.sql",
+            "responsabilidad": "sql/cuentas/Ultimos10Movimientos.sql",
+            "orden": "sql/cuentas/Ultimos10Movimientos.sql"
+        },
+        "table_metadata": {
+            "column_names": ["Descripcion", "Nombre", "Fecha", "Voucher", "Cargos", "Abonos"],
+            "styles": {
+                "columns": [
+                    ["align_left"],
+                    ["align_left"],
+                    ["align_center"],
+                    ["align_center"],
+                    ["align_right"],
+                    ["align_right"]
+                ]
+            }
+        }
+    },
+    {
+        "tipo": "tabla",
+        "nombre": "Ruts que componen el saldo",
+        "sql_file_path": {
+            "activo": "sql/cuentas/RutsComponenSaldo.sql",
+            "pasivo": "sql/cuentas/RutsComponenSaldo.sql",
+            "patrimonio": "sql/cuentas/RutsComponenSaldo.sql",
+            "ingresos": "sql/cuentas/RutsComponenSaldo.sql",
+            "egresos": "sql/cuentas/RutsComponenSaldo.sql",
+            "impuestos": "sql/cuentas/RutsComponenSaldo.sql",
+            "derechos": "sql/cuentas/RutsComponenSaldo.sql",
+            "responsabilidad": "sql/cuentas/RutsComponenSaldo.sql",
+            "orden": "sql/cuentas/RutsComponenSaldo.sql"
+        },
+        "table_metadata": {
+            "column_names": ["Auxiliar","Nombre","Saldo"],
+            "styles": {
+                "columns": [
+                    ["align_center"]
+                ]
+            }
+        }
+    }
+]
+
+
+

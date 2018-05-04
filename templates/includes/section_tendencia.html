@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      google.charts.load('current', {
+        callback: function () {
+
+          var data = google.visualization.arrayToDataTable(
+
+
+            {{ section['table_object']['table_data'] }}
+
+
+          );
+
+          var view = new google.visualization.DataView(data);
+          view.setColumns([{
+            calc: function (dt, row) {
+              var dateParts = dt.getValue(row, 0).split('-');
+              return new Date(parseInt(dateParts[0]), parseInt(dateParts[1]) - 1, 1);
+            },
+            type: 'date',
+            label: data.getColumnLabel(0)
+          }, 1]);
+
+
+          var options = {
+            isStacked: true,
+            title: 'Linea de tendencia.',
+            legend: 'none',
+            hAxis: {title: 'Years'},
+            vAxis: {title: 'Pesos'},
+            trendlines: {
+              0: {
+                color: 'red',
+              }
+            }
+          };
+
+          var chart = new google.visualization.ScatterChart(document.getElementById('{{ section['title'] }}'));
+          chart.draw(view, options);
+        },
+        packages:['corechart']
+      });
+
+
+    </script>
+  </head>
+  <body>
+    <div id="{{ section['title'] }}"></div>
+  </body>
+</html>
+<br>

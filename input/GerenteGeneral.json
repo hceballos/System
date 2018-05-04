@@ -1,0 +1,99 @@
+[
+
+  {
+    "nombre": "Liquidez",
+    "sql_file_path": "sql/GGeneral/Liquidez.sql",
+    "tipo": "gauge",
+    "options": {
+      "redFrom": 0,
+      "redTo": 25,
+      "greenFrom": 25,
+      "greenTo": 75,
+      "yellowFrom": 75,
+      "yellowTo": 100,
+      "max": 100,
+      "min": 0,
+      "height": 120,
+      "width": 400,
+      "minorTicks": 5
+    },
+    "table_metadata": {
+      "column_names": "Financieros",
+      "styles": {
+        "columns": "financiero"
+      }
+    }
+  },
+  {
+    "nombre": "Efectivo",
+    "sql_file_path": "sql/GGeneral/Efectivo.sql",
+    "tipo": "gauge",
+    "options": {
+      "redFrom": 0,
+      "redTo": 50,
+      "greenFrom": 50,
+      "greenTo": 75,
+      "yellowFrom": 75,
+      "yellowTo": 100,
+      "max": 100,
+      "min": 0,
+      "height": 120,
+      "width": 400,
+      "minorTicks": 5
+    },
+    "table_metadata": {
+      "column_names": "",
+      "styles": {
+        "columns": "financiero"
+      }
+    }
+  },
+  {
+    "nombre": "Acido",
+    "sql_file_path": "sql/GGeneral/Acido.sql",
+    "tipo": "gauge",
+    "options": {
+      "redFrom": 0,
+      "redTo": 25,
+      "greenFrom": 25,
+      "greenTo": 75,
+      "yellowFrom": 75,
+      "yellowTo": 100,
+      "max": 150,
+      "min": 0,
+      "height": 120,
+      "width": 400,
+      "minorTicks": 5
+    },
+    "table_metadata": {
+      "column_names": "Gestion",
+      "styles": {
+        "columns": "gestion"
+      }
+    }
+  },
+  {
+    "nombre": "Ebitda",
+    "sql_file_path": "sql/GGeneral/Ebitda.sql",
+    "tipo": "gauge",
+    "options": {
+      "redFrom": 0,
+      "redTo": 25,
+      "greenFrom": 25,
+      "greenTo": 75,
+      "yellowFrom": 75,
+      "yellowTo": 100,
+      "max": 100,
+      "min": 0,
+      "height": 120,
+      "width": 400,
+      "minorTicks": 15
+    },
+    "table_metadata": {
+      "column_names": "",
+      "styles": {
+        "columns": "gestion"
+      }
+    }
+  }
+]

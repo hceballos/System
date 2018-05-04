@@ -1,0 +1,109 @@
+[
+    {
+        "header": true,
+        "tipo": "tabla",
+        "nombre": "",
+        "sql_file_path": "sql/ruts/NombreRut.sql",
+        "table_metadata": {
+            "column_names": ["Nombre"],
+            "styles": {
+                "columns": [
+                    ["align_center"]
+                ]
+            }
+        }
+    },
+    {
+        "header": true,
+        "tipo": "tabla",
+        "nombre": "",
+        "sql_file_path": "sql/ruts/NumeroRut.sql",
+        "table_metadata": {
+            "column_names": ["Numero de Rut"],
+            "styles": {
+                "columns": [
+                    ["align_center"]
+                ]
+            }
+        }
+    },
+    {
+        "header": true,
+        "tipo": "tabla",
+        "nombre": "",
+        "sql_file_path": "sql/ruts/SaldoRut.sql",
+        "table_metadata": {
+            "column_names": ["Saldo Segun Balance"],
+            "styles": {
+                "columns": [
+                    ["align_center"]
+                ]
+            }
+        }
+    },
+    {
+        "tipo": "tendencia",
+        "nombre": "Linea de tendencia",
+        "sql_file_path": "sql/ruts/tendencia.sql",
+        "table_metadata": {
+            "column_names": ["Tendencia"],
+            "styles": {
+                "columns": [
+                    ["align_center"]
+                ]
+            }
+        }
+    },
+    {
+        "tipo": "grafico",
+        "nombre": "Serie de Tiempo",
+        "haxis": "Meses",
+        "vaxis": "Pesos",
+        "lineas": [
+            {
+                "nombre": "2017",
+                "sql_file_path": "sql/ruts/SaldoAnterior.sql"
+
+            },
+            {
+                "nombre": "2018",
+                "sql_file_path": "sql/ruts/SaldoActual.sql"
+            }
+        ]
+    },
+    {
+        "tipo": "tabla",
+        "nombre": "Ultimos 5 periodos",
+        "sql_file_path": "sql/ruts/Ultimos5anios.sql",
+        "table_metadata": {
+            "column_names": ["Year","Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov", "Dic"],
+            "styles": {
+                "columns": [
+                    ["align_center", "letras_verdes"]
+                ]
+            }
+        }
+
+    },
+    {
+        "tipo": "tabla",
+        "nombre": "Ultimos 20 movimientos",
+        "sql_file_path": "sql/ruts/Ultimos10Movimientos.sql",
+        "table_metadata": {
+            "column_names": ["Descripcion", "Nombre", "Fecha", "Voucher", "Cargos", "Abonos"],
+            "styles": {
+                "columns": [
+                    ["align_left"],
+                    ["align_left"],
+                    ["align_center"],
+                    ["align_center"],
+                    ["align_right"],
+                    ["align_right"]
+                ]
+            }
+        }
+    }
+]
+
+
+

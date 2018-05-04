@@ -1,0 +1,29 @@
+<!---funcion create_table y le paso los datos de 'table_object' en section-->
+{% macro create_table(table_object) %}
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover table-condensed">
+        <tr class="info">
+            {% for column in table_object['table_header'] %}
+                <th class="tabla_columna_titulo">
+                    {{ column }}
+                </th>
+            {% endfor %}
+        </tr>
+
+        {% for row in table_object['table_data'] %}
+            <tr>
+                {% for column in row %}
+                    <td class=" {% for style in table_object['table_styles']['columns'][loop.index0] %}
+                                    {{ style}}
+                                {% endfor %}">
+                        {{ column }}
+                    </td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+
+    </table>
+</div>
+
+{% endmacro %}

@@ -1,0 +1,22 @@
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['gauge']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Label', 'Value'],
+      {{ section['table_data'] }},
+    ]);
+
+    var options = {{ section['options'] }} ;
+
+    var chart = new google.visualization.Gauge(document.getElementById('{{ section['title'] }}'));
+    chart.draw(data, options);
+
+  }
+</script>
+<h4>{{ section['table_object']['table_header'] }}</h4>
+<div id="{{ section['title'] }}" style="width: 100px; height: 120px;"> </div>
+  <div>
+    <div id="{{ section['table_object']['table_styles']['columns'] }}"></div>
+</div>

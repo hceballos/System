@@ -1,0 +1,11 @@
+{% import 'includes/table.html' as table %}
+    {% if section['title'] %}
+        <div class="section_table_name">
+        <!---'title': u'Caja_Chica' -->
+            <h4>{{ section['title'] }}</h4>
+        </div>
+    {% endif %}
+
+<div class="section_table_content">
+{{ table.create_table(section['table_object']) }}
+</div>
